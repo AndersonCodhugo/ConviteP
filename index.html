@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Convite Especial</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Biblioteca de confetes -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <audio id="musica-fundo" src="/assets/Classicals.de-Vivaldi-The-Four-Seasons-01-John-Harrison-with-the-Wichita-State-University-Chamber-Players-Spring-Mvt-1-Allegro.mp3" loop></audio>
+
+    <!-- Tela 1: Inicial -->
+    <div id="tela-inicial" class="container">
+        <h1>Você recebeu um convite 💌</h1>
+        <button id="btn-abrir" class="btn-padrao">Toque para ver</button>
+    </div>
+
+    <!-- Tela 2: O Convite -->
+    <div id="tela-convite" class="container hidden">
+        <h1>Priscila, você aceita ir ao cinema comigo sábado que vem? 🍿</h1>
+        <div class="botoes-container">
+            <button id="btn-sim" class="btn-padrao btn-verde">Sim</button>
+            <button id="btn-nao" class="btn-padrao btn-vermelho">Não</button>
+        </div>
+    </div>
+
+    <!-- Tela 3: Confirmação -->
+    <div id="tela-confirmacao" class="container hidden">
+        <h1>Tem certeza disso? 🥺</h1>
+        <div class="botoes-container">
+            <button id="btn-confirma-sim" class="btn-padrao btn-vermelho">Sim, tenho certeza</button>
+            <button id="btn-confirma-nao" class="btn-padrao btn-verde">Não, mudei de ideia</button>
+        </div>
+    </div>
+
+    <!-- Tela 4: Comemoração (Sim) -->
+    <div id="tela-comemoracao" class="container hidden">
+        <img src="/assets/scuba-scuba-cat.gif" alt="Comemoração!" class="gif-comemoracao">
+        <h2>Vamooo! Redirecionando...</h2>
+    </div>
+
+    <!-- Tela 5: Hackeada / 404 (Erros) -->
+    <div id="tela-explosao" class="container hidden">
+        <h1 class="glitch-text">ERROR 404</h1>
+        <p class="hacker-text">> FATAL ERROR_</p>
+        <p class="hacker-text">> SISTEMA COMPROMETIDO...</p>
+        <p class="hacker-text">> DADOS CORROMPIDOS.</p>
+        <p class="hacker-text blink">> ENCERRANDO...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
